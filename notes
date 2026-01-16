@@ -1,0 +1,62 @@
+https://aemeventing-webhook.azurewebsites.net/
+
+https://aemeventing-webhook.azurewebsites.net/webhook/iainm-aem-eventing
+
+
+https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/examples/webhook
+
+Configure web hook in IO
+
+
+
+Journaling end point
+https://events-va6.adobe.io/events/organizations/48014/integrations/888649/51227a8a-f20c-48b3-b6f4-4cedaec01715
+
+
+For the event browser
+	You are not authorized to read events in this journal. Please make sure you have added the I/O Management API to the project.
+
+IO - 
+Step 1- set up the event 
+Step 2- Enable journaling
+
+
+
+
+Receive Events via IO and App Builder
+
+aio login 
+aio app init
+All Templates 
+@adobe/generator-app-excshell
+
+Update index.js
+
+aio app deploy
+
+Via io, select the project, stage > Add service > add api > Adobe Services > I/o management API
+
+Then Add service > Event > Experience Cloud > AEM Sites > Next
+Select instance of AEM and event 
+
+Select Option 2 Runtime Action and the generic action created in the previous step, and save 
+Verify Debug tracing > challenge probe
+
+Process Events via IO and app builder
+> all action template
+@adobe/generator-add-action-generic
+	@adobe/generator-add-action-generic
+		name it AEM Event Processor 
+
+Add eventValidator.js
+loadEventDetailsFromAEM.js
+eventValidator
+storeEventData
+
+
+Editing the Content Fragment sends events to the cloud runtime (acp/sync_event_handler_*).
+Your local UI (via config.local.json) is now pointing to the cloud runtime for load-processed-aem-events.
+Running the UI in the shell provides a real IMS Bearer token, so the cloud action authorizes and returns data.
+
+
+
