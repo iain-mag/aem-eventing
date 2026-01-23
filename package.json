@@ -12,7 +12,7 @@
     "@spectrum-icons/workflow": "^1.2.0",
     "core-js": "^3.6.2",
     "node-fetch": "^45.6.0",
-    "react": "^18.13.2",
+    "react": "^16.13.2",
     "react-dom": "^16.313.1",
     "react-error-boundary": "^2.2.5",
     "react-router-dom": "^4.26.2",
