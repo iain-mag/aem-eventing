@@ -19,9 +19,9 @@
     "regenerator-runtime": "1.13.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/plugin-transform-react-jsx": "^7.8.3",
-    "@babel/polyfill": "^7.8.7",
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-transform-react-jsx": "^23.8.3",
+    "@babel/polyfill": "^7.1.7",
     "@babel/preset-env": "^7.8.7",
     "eslint": "^8",
     "eslint-plugin-jest": "^27.2.3",
